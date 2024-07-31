@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IX Comp</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo-container">
+        <a href="https://porto.aryok.me"><img src="assets/IX.png" class="logo" alt="Logo"></a>
+            
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#packages">Produk</a></li>
+            <li><a href="#contact">Call Me</a></li>
+        </ul>
+        <div class="hamburger">
+            <img src="assets/menu.jpg" class="hamburger-icon" alt="Menu">
+        </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <header id="home">
+        <h1>Tempat Jualan Komputer, Laptop dan HP</h1>
+        <p>Murah Meriah</p>
+        <div class="banner">
+            <div class="slides">
+                <div class="slide"><img src="assets/1.jpg" alt="Slide 1"></div>
+                <div class="slide"><img src="assets/2.jpg" alt="Slide 2"></div>
+                <div class="slide"><img src="assets/3.jpg" alt="Slide 3"></div>
+                <div class="slide"><img src="assets/1.jpg" alt="Slide 1"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner Contact Section -->
+    <section id="contact">
+        <div class="contact-content">
+            <div>
+                <img src="assets/IX.png" class="logo-contact" width="auto" height="400px">
+                <blockquote>"Inspiring Innovation • Persistent Perfection"</blockquote>
+                <div class="profile-card">
+                  <div class="profile-icon">
+                      <img src="https://telegra.ph/file/3b5abc65cb95c8ece08e3.jpg" alt="Profile Icon">
+                  </div>
+                  <div class="profile-info">
+                      <h4>Aryaeka.r.p</h4>
+                      <p>Pelajar</p>
+                  </div>
+              </div>
+                
+            <h2>Beli dan dapatkan benefitnya</h2>
+            <div class="info-list">
+                <div class="info-item">
+                    <div class="info-number">1</div>
+                    <p>Murah meriah</p>
+                </div>
+                <div class="info-item">
+                    <div class="info-number">2</div>
+                    <p>Banyak diskonnya</p>
+                </div>
+                <div class="info-item">
+                    <div class="info-number">3</div>
+                    <p>Dijamin orinisil</p>
+                </div> 
+            </div>
+            </div>
+            <div class="contact-form">
+                <h2>Contact Me</h2>
+                <p>Saya akan menghubungi anda 1x24 Jam setelah data kami terima.</p>
+                <form id="contact-form" onsubmit="return validateForm()">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="First and last name" required>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                    <label for="destination">Apa Yang Kamu Mau?</label>
+                    <select id="destination" name="destination" required>
+                        <option value="">Select option</option>
+                        <option value="destination1">Komputer</option>
+                        <option value="destination2">Laptop</option>
+                        <option value="destination3">SmartPhone</option>
+                    </select>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Package Section -->
+    <section id="packages">
+        <h2>Produk</h2>
+        <div class="packages-container">
+            <div class="package" id="kom1">
+                <img src="assets/k1.jpeg" alt="PC Gaming 1">
+                <h3>PC Gaming</h3>
+                <p>PC dengan spek kelas atas</p>
+                <p class="price">Rp20.000.000</p>
+                <button class="package-button" onclick="showAlert('PC Gaming', 'Rp20.000.000')">Beli</button>
+            </div>
+            <div class="package" id="kom2">
+                <img src="assets/k2.jpg" alt="PC Gaming 2">
+                <h3>PC Gaming</h3>
+                <p>PC dengan spek kelas atas</p>
+                <p class="price">Rp25.000.000</p>
+                <button class="package-button" onclick="showAlert('PC Gaming', 'Rp25.000.000')">Beli</button>
+            </div>
+            <div class="package" id="lap1">
+                <img src="assets/k3.jpg" alt="Laptop Gaming 1">
+                <h3>Laptop Gaming</h3>
+                <p>Laptop dengan spesifikasi kelas atas </p>
+                <p class="price">Rp15.000.000</p>
+                <button class="package-button" onclick="showAlert('Laptop Gaming', 'Rp15.000.000')">Beli</button>
+            </div>
+            <div class="package" id="lap2">
+                <img src="assets/k4.png" alt="Laptop Gaming 2">
+                <h3>Laptop Gaming</h3>
+                <p>Laptop dengan spesifikasi kelas atas</p>
+                <p class="price">Rp16.000.000</p>
+                <button class="package-button" onclick="showAlert('Laptop Gaming', 'Rp16.000.000')">Beli</button>
+            </div>
+            <div class="package" id="hp1">
+                <img src="assets/k5.jpg" alt="HP Gaming 1">
+                <h3>HP Gaming</h3>
+                <p>HandPhone dengan kemampuan sangar</p>
+                <p class="price">Rp11.000.000</p>
+                <button class="package-button" onclick="showAlert('HP Gaming', 'Rp11.000.000')">Beli</button>
+            </div>
+            <div class="package" id="hp2">
+                <img src="assets/k6.jpg" alt="HP Gaming 2">
+                <h3>HP Gaming</h3>
+                <p>HandPhone dengan kemampuan sangar</p>
+                <p class="price">Rp12.000.000</p>
+                <button class="package-button" onclick="showAlert('HP Gaming', 'Rp12.000.000')">Beli</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Call to Action Section -->
+    <section id="call-to-action">
+        <h2>Terima Kasih Sudah Mengunjungi</h2>
+        <p>Discover amazing products and deals that suit your needs. Don't miss out on our exclusive offers!</p>
+        <button id="cta-button" onclick="performAction()">Call to Action</button>
+        <div id="loading" class="loading-spinner" style="display: none;"></div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="assets/IX.png" alt="yoks Logo">
+            </div>
+            <div class="footer-content">
+                <div class="footer-section company-info">
+                    <h4>About Me</h4>
+                    <p>Saya Sedang dalam proses belajar </p>
+                </div>
+                <div class="footer-section quick-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#packages">Produk</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-section social-media">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://x.com/aryokss"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Twitter_new_X_logo.png" alt="Twitter"></a>
+                        <a href="https://instagram.com/aryaeka.r.p"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1000px-Instagram_logo_2022.svg.png" alt="Instagram"></a>
+                    </div>
+                </div>
+                <div class="footer-section contact-info">
+                    <h4>Contact Me</h4>
+                    <p>Email: ix@aryok.me</p>
+                    <p>Phone: +62 9999 9999 9999</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <a href="https://porto.aryok.me">&copy; IX.</a>
+        </div>
+    </footer>
+    
+
+    <script src="script/script.js"></script>
+</body>
+</html>
